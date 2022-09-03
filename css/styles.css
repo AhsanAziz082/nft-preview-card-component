@@ -1,0 +1,148 @@
+/* ---------- Global Section ---------- */
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(0, 0%, 100%);
+}
+
+hr {
+  border: 2px solid hsl(215, 32%, 27%);
+  border-bottom: none;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+/* ---------- Main Section ---------- */
+.container {
+  margin: 10vh auto;
+  padding: 1.2rem;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card-img {
+  width: inherit;
+  border-radius: 15px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: hsla(178, 100%, 50%, 0.45);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card-info {
+  margin: 1.5rem auto 1.1rem;
+  padding: 0;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.ethereum-rate {
+  color: hsl(178, 100%, 50%);
+}
+
+.time {
+  float: right;
+}
+
+.icon-img {
+  margin: 0 0 -2px 0;
+}
+
+.author {
+  margin: 1.1rem auto 0.5rem;
+  padding: 0;
+}
+
+.author p {
+  display: inline;
+  font-size: 14px;
+  vertical-align: middle;
+  margin: auto 5px;
+}
+
+.author img {
+  display: inline;
+  vertical-align: middle;
+  width: 35px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+
+.author-name {
+  color: hsl(0, 0%, 100%);
+}
+
+.author-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/* ---------- Footer Section ---------- */
+.attribution p {
+  font-size: 11px;
+  text-align: center;
+}
+/* ---------- Mobile Responsive Section ---------- */
+@media only screen and (max-width: 375px){
+  .container {
+    margin: 5vh 3vh;
+  }
+}
